@@ -9,20 +9,44 @@
     tools:context=".MainActivity">
 
     <TextView
-            android:id="@+id/lblHello"
+        android:id="@+id/lblEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="Email!" />
 
-    <CheckBox android:id="@+id/chk01" android:text="Checkbox 01"
-              android:layout_below="@+id/lblHello"
-              android:layout_alignParentLeft="true"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"/>
-    <Button android:id="@+id/btn02" android:text="botón"
-            android:layout_below="@+id/chk01"
-            android:layout_alignParentLeft="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/txtEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblEmail"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_alignParentLeft="true"
+        android:text="Password" />
+
+    <EditText android:id="@+id/txtPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPassword"
+        android:layout_alignParentLeft="true"
+        />
+
+    <CheckBox android:id="@+id/chk01"
+        android:text="Acepto condiciones"
+        android:layout_below="@+id/txtPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btn02" android:text="Continuar"
+        android:layout_below="@+id/chk01"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </RelativeLayout>
